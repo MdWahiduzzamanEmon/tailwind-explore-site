@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+   scroll-behavior: smooth;
+}
+body{
+     
+    font-family: 'Roboto', sans-serif;
+}
+.penguinColor{
+    color: #A4BC46;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.fashionColor{
+    color: #363958;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-color-1{
+    background-color: #FFFBF0;
+    background-image: url(icons/Group1.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-position:left 450px top;
+}
+.font-color-1{
+    color: #FABE4C;
+}
+.font-color-2{
+    color: #363958;
+}
+.btn-1{
+    background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+
+}
+.font-style{
+    font-family: 'Bebas Neue', cursive;
+}
+
+label #btn{
+    font-size: 25px;
+    color: #000;
+    float: right;
+    /* margin-left: 112px; */
+    cursor: pointer;
+}
+input[type="checkbox"]{
+    display:none;
+}
+
+ .nav_bar ul{
+       position: fixed;
+       top:65px;
+       left: -100%;
+       width: 100%;
+       height: 40vh;
+       background: linear-gradient(180deg, #A4BC46 0%, #85A019 100%);
+       text-align: center;
+       transition: .5s all;
+       -webkit-transition: .5s all;
+       -moz-transition: .5s all;
+       -ms-transition: .5s all;
+       -o-transition: .5s all;
+       
+    }
+    .nav_bar ul li{
+       display: block;
+       margin: 20px;
+       line-height: 3;
+   }
+   #check:checked ~ .nav_bar ul{
+        left: 0px;
+   }
