@@ -40,16 +40,17 @@ body{
 label #btn{
     font-size: 25px;
     color: #000;
-    float: right;
-    /* margin-left: 112px; */
     cursor: pointer;
 }
 input[type="checkbox"]{
     display:none;
 }
 
- .nav_bar ul{
-       position: fixed;
+
+@media only screen and (max-width: 765px){
+    
+ .nav-bar ul{
+       position: absolute;
        top:65px;
        left: -100%;
        width: 100%;
@@ -60,14 +61,16 @@ input[type="checkbox"]{
        -webkit-transition: .5s all;
        -moz-transition: .5s all;
        -ms-transition: .5s all;
-       -o-transition: .5s all;
-       
-    }
-    .nav_bar ul li{
-       display: block;
-       margin: 20px;
-       line-height: 3;
-   }
-   #check:checked ~ .nav_bar ul{
-        left: 0px;
-   }
+       -o-transition: .5s all;    
+}
+.nav-bar ul li{
+    display: block;
+    margin: 20px;
+    line-height: 3;
+}
+#check:checked ~ .nav-bar ul{
+    left: 0px;
+}
+}
+    
+
